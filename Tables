@@ -1,0 +1,17 @@
+CREATE TABLE VISIT
+(SHOPPER_ID CHAR(4) PRIMARY KEY,
+DATE_VISITED DATE,
+POUNDS_RECEIVED INT,
+ADDRESS CHAR (30));
+CREATE TABLE MEMBER
+(FIRST_NAME CHAR(15),
+LAST_NAME CHAR (15),
+RACE CHAR (20),
+AGE_GROUP CHAR (5)
+Address Char (50));
+ /* Age Group is range set to look like this: 19-39. Valid entries: 0-18, 19-39, 40-65, 66+.*/
+ /* Instead of First_Name, Last_Name you can use Full_Name and combine both fields*/
+CREATE TABLE HOUSEHOLD
+(ADDRESS VARCHAR (40) PRIMARY KEY,
+NUM_OF_MEMBERS SMALLINT);
+/* Points aren't needed, they are calculated by Household Size*/
